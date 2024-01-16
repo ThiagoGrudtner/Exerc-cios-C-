@@ -1,2 +1,2 @@
-# Exerc-cios-C-
+# Exercicio-C#
 Exercícios para treino de programação em C#
