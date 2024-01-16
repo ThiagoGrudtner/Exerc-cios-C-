@@ -1,0 +1,28 @@
+// Escreva um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário.
+// A seguir, mostre o número e o salário do funcionário, com duas casas decimais.
+
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        int NumFunc, HorasTrab;
+
+            decimal SalarioHr, SalarioTotal;
+
+
+            NumFunc = int.Parse(Console.ReadLine());
+
+            HorasTrab = int.Parse(Console.ReadLine());
+
+            SalarioHr = decimal.Parse(Console.ReadLine());
+
+
+            SalarioTotal = HorasTrab * SalarioHr;
+
+            Console.WriteLine("NUMBER = " + NumFunc);
+            Console.WriteLine("SALARY = U$ " + SalarioTotal);
+    }
+
+}
