@@ -1,0 +1,24 @@
+// Faça um programa que calcule e mostre o volume de uma esfera sendo fornecido o valor de seu raio (R).
+// A fórmula para calcular o volume é: (4/3) * pi * (R elevado a 3). Considere (atribua) para pi o valor 3.14159.
+
+using System;
+namespace uri1010
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double raio, pi, volume;
+
+            raio = double.Parse(Console.ReadLine());
+
+            pi = 3.14159;
+
+            volume = (4.0 / 3) * pi * Math.Pow(raio, 3.0);
+
+            Console.WriteLine("VOLUME = " + volume.ToString("F3"));
+
+            
+        }
+    }
+}
