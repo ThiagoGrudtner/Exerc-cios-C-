@@ -1,0 +1,29 @@
+// Fazer um programa para ler as medidas da base e altura de um retângulo. Em seguida, mostrar o valor
+// da área, perímetro e diagonal deste retângulo, com quatro casas decimais.
+
+using System;
+
+class Program
+{
+
+    static void Main(string[] args)
+    {
+
+        double altura, lado, perimetro, area, diagonal;
+
+        altura = double.Parse(Console.ReadLine());
+        lado = double.Parse(Console.ReadLine());
+
+        perimetro = altura * 2 + lado * 2;
+
+        area = altura * lado;
+
+        diagonal = Math.Sqrt(Math.Pow(lado, 2.0) + Math.Pow(altura, 2.0));
+
+        Console.WriteLine("Perímetro = " + perimetro);
+        Console.WriteLine("Área = " + area);
+        Console.WriteLine("Diagonal = " + diagonal.ToString("F4"));
+
+    }
+
+}
