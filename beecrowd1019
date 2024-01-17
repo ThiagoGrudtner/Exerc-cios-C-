@@ -1,0 +1,26 @@
+// Leia um valor inteiro, que é o tempo de duração em segundos de um determinado evento em uma fábrica,
+// e informe-o expresso no formato horas:minutos:segundos.
+
+using System;
+namespace bc1019
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int hrs, min, seg, duracao;
+
+            duracao = int.Parse(Console.ReadLine());
+
+            hrs = duracao / 3600;
+
+            min = (duracao % 3600) / 60;
+
+            seg = (duracao % 3600) % 60;
+
+            Console.WriteLine(hrs + ":" + min + ":" + seg);
+
+
+        }
+    }
+}
