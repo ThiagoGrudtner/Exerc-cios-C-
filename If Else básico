@@ -1,0 +1,31 @@
+//Calculo de média de nota escolar, com uso de estruturas conficionais.
+
+using System;
+namespace bc1019
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            decimal nota1, nota2, notafinal;
+
+            nota1 = decimal.Parse(Console.ReadLine());
+            nota2 = decimal.Parse(Console.ReadLine());
+
+
+            notafinal = (nota1 + nota2);
+
+            if (notafinal < 60)
+            {
+                Console.WriteLine("REPROVADO");
+            }
+            else
+            {
+                Console.WriteLine("APROVADO");
+            }
+            Console.WriteLine("Sua nota final foi " + notafinal.ToString("F1"));
+
+
+        }
+    }
+}
