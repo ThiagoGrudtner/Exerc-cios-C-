@@ -1,0 +1,61 @@
+// Leia o salário do funcionário e calcule e mostre o novo salário, bem como o valor de reajuste ganho e o índice reajustado, em percentual.
+
+using System;
+namespace beecrowd1048
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x = double.Parse(Console.ReadLine());
+
+            double reajuste, novosal, perc;
+
+            if (x <= 400)
+            {
+                perc = 15;
+                reajuste = x * perc / 100;
+                novosal = x + reajuste;
+                Console.WriteLine("Novo salario: " + novosal.ToString("F2"));
+                Console.WriteLine("Reajuste ganho: " + reajuste.ToString("F2"));
+                Console.WriteLine("Em percentual: " + perc + " %");
+            }
+            else if (x <= 800)
+            {
+                perc = 12;
+                reajuste = x * perc / 100;
+                novosal = x + reajuste;
+                Console.WriteLine("Novo salario: " + novosal.ToString("F2"));
+                Console.WriteLine("Reajuste ganho: " + reajuste.ToString("F2"));
+                Console.WriteLine("Em percentual: " + perc + " %");
+            }
+            else if (x <= 1200)
+            {
+                perc = 10;
+                reajuste = x * perc / 100;
+                novosal = x + reajuste;
+                Console.WriteLine("Novo salario: " + novosal.ToString("F2"));
+                Console.WriteLine("Reajuste ganho: " + reajuste.ToString("F2"));
+                Console.WriteLine("Em percentual: " + perc + " %");
+            }
+            else if (x <= 2000)
+            {
+                perc = 7;
+                reajuste = x * perc / 100;
+                novosal = x + reajuste;
+                Console.WriteLine("Novo salario: " + novosal.ToString("F2"));
+                Console.WriteLine("Reajuste ganho: " + reajuste.ToString("F2"));
+                Console.WriteLine("Em percentual: " + perc + " %");
+            }
+            else if (x > 2000)
+            {
+                perc = 4;
+                reajuste = x * perc / 100;
+                novosal = x + reajuste;
+                Console.WriteLine("Novo salario: " + novosal.ToString("F2"));
+                Console.WriteLine("Reajuste ganho: " + reajuste.ToString("F2"));
+                Console.WriteLine("Em percentual: " + perc + " %");
+            }
+        }
+    }
+}
