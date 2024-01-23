@@ -1,0 +1,28 @@
+// Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou "Nao sao Multiplos",
+// indicando se os valores lidos são múltiplos entre si.
+
+using System;
+namespace beecrowd1044
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int A, B;
+
+            String[] lista = Console.ReadLine().Split(' ');
+
+            A = int.Parse(lista[0]);
+            B = int.Parse(lista[1]);
+
+            if (B % A == 0 || A % B == 0)
+            {
+                Console.WriteLine("Sao Multiplos");
+            }
+            else
+            {
+                Console.WriteLine("Nao sao Multiplos");
+            }
+        }
+    }
+}
