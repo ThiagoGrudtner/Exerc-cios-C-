@@ -1,0 +1,60 @@
+using System;
+namespace switchcase
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y;
+            decimal preco1 = 0, preco2 = 0;
+
+
+            String[] lista = Console.ReadLine().Split(' ');
+
+            x = int.Parse(lista[0]);
+            y = int.Parse(lista[1]);
+
+            switch (x)
+            {
+                case 1:
+                    preco1 = 4;
+                    break;
+                case 2:
+                    preco1 = (decimal)4.50;
+                    break;
+                case 3:
+                    preco1 = 5;
+                    break;
+                case 4:
+                    preco1 = 2;
+                    break;
+                case 5:
+                    preco1 = (decimal)1.50;
+                    break;
+                default:
+                    throw new Exception("Número inválido");
+            }
+            switch (y)
+            {
+                case 1:
+                    preco2 = 4;
+                    break;
+                case 2:
+                    preco2 = (decimal)4.50;
+                    break;
+                case 3:
+                    preco2 = 5;
+                    break;
+                case 4:
+                    preco2 = 2;
+                    break;
+                case 5:
+                    preco2 = (decimal)1.50;
+                    break;
+                default:
+                    throw new Exception("Número inválido");
+            }
+            Console.WriteLine($"O preço total foi {preco1 + preco2}");
+        }
+    }
+}
