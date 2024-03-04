@@ -1,0 +1,78 @@
+// Leia 3 valores inteiros e ordene-os em ordem crescente. No final, mostre os valores em ordem crescente, uma linha em branco e em seguida,
+// os valores na sequência como foram lidos.
+
+using System;
+
+
+namespace ifelse
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int A, B, C, maior, menor, medio;
+
+            String[] lista = Console.ReadLine().Split(' ');
+
+            A = int.Parse(lista[0]);
+            B = int.Parse(lista[1]);
+            C = int.Parse(lista[2]);
+
+            if (A > B & A > C)
+            {
+                maior = A;
+
+                if (B > C)
+                {
+                    medio = B;
+                    menor = C;
+                }
+                else
+                {
+                    medio = C;
+                    menor = B;
+                }
+            }
+            else if (B > C & B > A)
+            {
+                maior = B;
+                
+                if (A > C)
+                {
+                    medio = A;
+                    menor = C;
+                }
+                else
+                {
+                    medio = C;
+                    menor = A;
+                }
+            }
+            else
+            {
+                maior = C;
+                if (B > A)
+                {
+                    medio = B;
+                    menor = A;
+                }
+                else
+                {
+                    medio = A;
+                    menor = B;
+                }
+            }
+
+            Console.WriteLine(menor);
+            Console.WriteLine(medio);
+            Console.WriteLine(maior);
+
+            Console.WriteLine( );
+
+            Console.WriteLine(A);
+            Console.WriteLine(B);
+            Console.WriteLine(C);
+        }
+    }
+}
