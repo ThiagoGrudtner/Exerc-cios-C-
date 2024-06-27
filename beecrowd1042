@@ -2,8 +2,6 @@
 // os valores na sequência como foram lidos.
 
 using System;
-
-
 namespace ifelse
 {
     class Program
