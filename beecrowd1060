@@ -1,0 +1,46 @@
+// Faça um programa que leia 6 valores. Estes valores serão somente negativos ou positivos (desconsidere os valores nulos). A seguir, mostre a quantidade de valores positivos digitados.
+
+using System;
+namespace mes
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+            double d = double.Parse(Console.ReadLine());
+            double e = double.Parse(Console.ReadLine());
+            double f = double.Parse(Console.ReadLine());
+            int cont = 0;
+
+            if (a > 0)
+            {
+                cont = cont + 1;
+            }
+            if (b > 0)
+            {
+                cont = cont + 1;
+            }
+            if (a > 0)
+            {
+                cont = cont + 1;
+            }
+            if (c > 0)
+            {
+                cont = cont + 1;
+            }
+            if (d > 0)
+            {
+                cont = cont + 1;
+            }
+            if (e > 0)
+            {
+                cont = cont + 1;
+            }
+            Console.WriteLine(cont + " valores positivos");
+        }
+    }
+}
